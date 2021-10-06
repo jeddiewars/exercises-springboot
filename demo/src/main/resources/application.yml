@@ -15,7 +15,18 @@ management:
       exposure:
         include: '*'
 
+server:
+  port: 8888
+  
 spring:
     profiles:
       default: test
       active: test
+    cloud:
+      config:
+          server:
+              git:
+                uri: https://github.com/jeddiewars/jeddiewars.git
+                username: jguerreroh@outlook.com
+                password: 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   
+                        
